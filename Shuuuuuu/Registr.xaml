@@ -1,0 +1,20 @@
+﻿<Window x:Class="Shuuuuuu.Registr"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Shuuuuuu"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        Title="Registr" Height="450" Width="800">
+    <Grid>
+        <Border Height="380" Width="720" CornerRadius="20" Background="Chocolate">
+            <TextBlock Text="Регистрация" FontSize="50" HorizontalAlignment="Center"/>
+        </Border>
+        <TextBlock Text="Логин" FontSize="20" Margin="70,142,649,241"/>
+        <TextBlock Text="Пароль" FontSize="20" Margin="70,212,649,171"/>
+        <TextBox x:Name="LoginBox" Height="50" FontSize="20" Margin="178,128,178,241" TextAlignment="Center" TextChanged="LoginBox_TextChanged"/>
+        <PasswordBox x:Name="PasswordBox" Height="50" FontSize="20" Margin="178,198,178,171" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" PasswordChanged="PasswordBox_PasswordChanged"/>
+        <Button x:Name="ReistrBtn" Click="ReistrBtn_Click" Content="Зарегистрироваться" FontSize="20" Background="Beige" Margin="261,304,257,50"/>
+    </Grid>
+</Window>
